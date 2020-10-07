@@ -1,0 +1,15 @@
+{% extends 'contact.html' %}
+{% load static %}
+{% block title %}subscrib{% endblock %}
+{% block subcribe %}
+<div class="d-flex align-items-center">
+<form method="" action="" class="subscribe-form">
+    {%csrf_token%}
+    <div class="form-group d-flex">
+        <input name="Subscribe" type="text" class="form-control" placeholder="Enter email address">
+        <input type="submit" value="Subscribe" class="submit px-3">
+    </div>
+</form>
+</div>
+{% endblock %}
+
